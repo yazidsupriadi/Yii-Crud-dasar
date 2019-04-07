@@ -25,9 +25,9 @@ echo '<td>'.$customer->lastname.'</td>';
 echo '<td>'.$customer->phone.'</td>';
 echo '<td>'.$customer->address.'</td>';
 echo '<td>';
-echo Html::a('<i class="glyphicon glyphicon-pencil"></i>',['product/update','id'=>$product->id]);
+echo Html::a('<i class="glyphicon glyphicon-pencil"></i>',['customer/update','id'=>$customer->id]);
 
-echo Html::a('<i class="glyphicon glyphicon-trash"></i>',['product/delete','id'=>$product->id],['onclick'=>'return(confirm(apakah adata mau dihapus ?) ? true :false );','style'=>' margin-left:10px;']);
+echo Html::a('<i class="glyphicon glyphicon-trash"></i>',['customer/delete','id'=>$customer->id],['onclick'=>'return(confirm(apakah adata mau dihapus ?) ? true :false );','style'=>' margin-left:10px;']);
 echo '</tr>';	
 }
 

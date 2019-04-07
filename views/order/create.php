@@ -8,7 +8,11 @@ use yii\helpers\Html;
  <?php $form = ActiveForm::begin(); ?>
  <?= $form->field($model,'order_date') ?>
 
- <?= $form->field($model,'customers_id') ?>
+ <?= $form->field($model,'customers') ?>
+<?= $form->field($model,'phone') ?>
+
+ <?= $form->field($model,'address') ?>
+
  <?= Html::submitButton('simpan',['class' => 'btn btn-primary']) ?>
 
  <?php ActiveForm::end(); ?>
